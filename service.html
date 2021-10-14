@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Services</title>
+  </head>
+  <body id="home">
+    <header class="hero team">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-user-check"></i> Bulley's</span
+          >
+          Barbers
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html">Pictures</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <!-- <h1>Team</h1> -->
+      </div>
+    </header>
+
+    <!-- About -->
+    <main>
+      <section class="service">
+        <h2>Profile</h2>
+        <p class="meta">
+          <i class="fas fa-female"></i> Posted by <strong>Bulley</strong> | June
+          2 2021
+        </p>
+        <img src="./images/cases/nana1.jpeg" alt="nana" />
+        <p>
+          A hero or a legend is someone who has spent their life performing a
+          greater cause.
+        </p>
+        <p>
+          When you aspire to become a hero, a hero quote can be a motivational
+          factor. Legend-based inspiring quotes can make you forget about the
+          trivial ideas of living and go beyond it to make the world a better
+          place for other people.
+        </p>
+        <p>
+          For instance, this quote by Christopher Reeve, "A hero is an ordinary
+          individual who finds the strength to persevere and endure in spite of
+          overwhelming obstacles", is a good motivation for someone facing
+          difficulties and help them to become a hero in their own life.
+          <strong> (Nana Fobi || )</strong>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy 2021 - Bulley's Saloon</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

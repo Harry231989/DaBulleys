@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Read Our History</title>
+  </head>
+  <body id="home">
+    <header class="hero team">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-user-check"></i> Bulley's</span
+          >
+          Barbers
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html">Pictures</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>44 high Street</h1>
+      </div>
+    </header>
+
+    <!-- About -->
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/cases/girl 5.jpg" alt="sidepic" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>Ladies are Welcome</h2>
+              <p class="meta">
+                <i class="fas fa-female"></i> Posted by
+                <strong>Bulley</strong> | May 24 2019
+              </p>
+              <p>
+                She is clothed with strength and dignity, and she laughs without
+                fear of the future
+              </p>
+              <a href="service.html" class="btn btn-dark">
+                <!-- <i class="fas fa-thumbs-up"></i> -->
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/cases/beard 3.jpg" alt="sidepic" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h2>Beard Treament</h2>
+              <p class="meta">
+                <i class="fas fa-female"></i> Posted by
+                <strong>Bulley</strong> | Nov 9 2020
+              </p>
+              <p>Choosing yourself is a revolutionary act of integrity</p>
+              <a href="service.html" class="btn btn-light">
+                <!-- <i class="fas fa-thumbs-up"></i> -->
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/cases/neat11.jpg" alt="sidepic" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>Afro Kids</h2>
+              <p class="meta">
+                <i class="fas fa-female"></i> Posted by
+                <strong>Bulley</strong> | June 2 2021
+              </p>
+              <p>
+                ’m so proud of you that it makes me proud of me. I hope you know
+                that..
+              </p>
+              <a href="service.html" class="btn btn-dark">
+                <!-- <i class="fas fa-thumbs-up"></i> -->
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+      </div>
+
+      <p>44 high Street Cr7 8le Thornton heath London</p>
+      <p>Copyright &copy 2021 - Bulley's Saloon</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
